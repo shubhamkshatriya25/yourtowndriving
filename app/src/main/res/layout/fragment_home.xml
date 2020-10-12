@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="30">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+
+            <TableRow >
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Available Balance"
+                    android:background="@drawable/cell_border"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_border"
+                    android:padding="10dp"
+                    android:text="000000"
+                    android:textSize="20sp"
+                    android:id="@+id/available_balance"/>
+            </TableRow>
+            <TableRow  >
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pending Balance"
+                    android:background="@drawable/cell_border"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="000000"
+                    android:background="@drawable/cell_border"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:id="@+id/pending_balance"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Expences"
+                    android:background="@drawable/cell_border"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="000000"
+                    android:background="@drawable/cell_border"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:id="@+id/expences"/>
+            </TableRow>
+            <TableRow >
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Income"
+                    android:background="@drawable/cell_border"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textColor="#000000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="000000"
+                    android:background="@drawable/cell_border"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:id="@+id/total-income"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_weight="50"
+        >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dedede"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/home_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Add Data"
+                android:textColor="@color/secondary_text_material_light"
+                android:textSize="16sp"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_sarathi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sarathi"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_bg"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/btn_vahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vahan"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_bg"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/btn_expence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Expence"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_bg"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+<!--        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#dedede"-->
+<!--            android:orientation="vertical"-->
+<!--            android:paddingLeft="16dp"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:paddingBottom="8dp"-->
+<!--            android:layout_marginTop="20dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/item_category"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="Top expenses"-->
+<!--                android:textColor="@color/secondary_text_material_light"-->
+<!--                android:textSize="16sp"-->
+<!--                android:gravity="center"/>-->
+
+
+<!--        </RelativeLayout>-->
+
+<!--        <ListView-->
+<!--            android:id="@+id/favourite_categories_list_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:clickable="true"-->
+<!--            android:clipToPadding="false"-->
+<!--            android:paddingBottom="120dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

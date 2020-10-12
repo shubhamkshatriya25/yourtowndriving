@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "298017821966",
+    "firebase_url": "https://fir-cb864.firebaseio.com",
+    "project_id": "fir-cb864",
+    "storage_bucket": "fir-cb864.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298017821966:android:3a99c55656c6d1440eb35f",
+        "android_client_info": {
+          "package_name": "pl.cyfrogen.budget"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298017821966-8ovhe06uq99ailig6l1bls3ia4m1n178.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pl.cyfrogen.budget",
+            "certificate_hash": "c7884ce48242510d578e0f48a608b5aa7d828a0c"
+          }
+        },
+        {
+          "client_id": "298017821966-990e3bula802dotcl5g8nqph2e2p8pt0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pl.cyfrogen.budget",
+            "certificate_hash": "e5adeb935b84c82072dec26450bd18a01005bb72"
+          }
+        },
+        {
+          "client_id": "298017821966-mll46ntmnh4do3ra9s688nm9e28t9tqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC34jbepIK0A76YwdxYEHqSxKaSTPj2jJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298017821966-mll46ntmnh4do3ra9s688nm9e28t9tqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
